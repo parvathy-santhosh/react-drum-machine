@@ -1,24 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Drum from './Drum.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h1> Drum Machine </h1>
+          <hr className="hr" />
+            <div id="drum-machine">
+              <Drum />
+              <div id="display"><br/></div>
+            </div>
+          <hr className="hr" />
+          <small className="footer"> --- parvathy-santhosh -- 2018 --- </small>
         </header>
       </div>
     );
